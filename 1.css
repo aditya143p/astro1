@@ -1,0 +1,226 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body {
+    background-color: #f8f9fa;
+    color: #333;
+  }
+  
+  /* Navbar */
+  nav {
+    background: linear-gradient(90deg, #FEC009, #FF5733);
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .nav-item a {
+    color: #333 !important;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-item a:hover {
+    color: #FF5733 !important;
+  }
+  
+  .nav-btn {
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-btn:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Hero Section */
+  swiper-container {
+    width: 100%;
+    height: 90vh;
+    background: #000;
+  }
+  
+  swiper-slide {
+    color: #fff;
+    padding: 40px 60px;
+  }
+  
+  .title {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    opacity: 0.8;
+  }
+  
+  .hero-btn {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .play-btn {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .play-btn:hover {
+    background-color: #333;
+  }
+  
+  /* Features Section */
+  .feature-container {
+    padding: 60px 0;
+  }
+  
+  .feature-box {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-10px);
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    background: #333;
+    color: #fff;
+  }
+  
+  .footer h3 {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons a {
+    color: #FF5733;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #FEC009;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .navbar-brand {
+      font-size: 1.2rem;
+    }
+  
+    .title {
+      font-size: 1.8rem;
+    }
+  
+    .subtitle {
+      font-size: 1rem;
+    }
+  
+    .hero-btn {
+      flex-direction: column;
+    }
+  }
+
+
+  /* effects */
+
+  /* Add hover effects for buttons */
+.nav-item .nav-btn {
+    padding: 10px 30px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-item .nav-btn:hover {
+    background-color: white;
+    color: black;
+    border-color: white;
+    transform: scale(1.05);
+  }
+  
+  .nav-item .nav-btn::after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: black;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0%;
+  }
+  
+  .nav-item .nav-btn:hover::after {
+    width: 100%;
+    left: 0;
+  }
+  
+  /* Add hover effects for footer links */
+  .offer-list p {
+    text-decoration: none;
+    transition: text-decoration-color 0.3s ease, transform 0.3s ease;
+    text-decoration-color: transparent;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 2px;
+  }
+  
+  .offer-list p:hover {
+    text-decoration: underline;
+    text-decoration-color: #ff8c00;
+    transform: scale(1.05);
+  }
+  
+  /* Add hover effects for social icons */
+  .social-icons a {
+    font-size: 20px;
+    color: #ff8c00;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .social-icons a:hover {
+    color: #b46402;
+    transform: scale(1.1);
+  }
+  
+  /* Add hover effects for service items */
+  .service-item {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Add hover effects for testimonial cards */
+  .testimonial-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  }

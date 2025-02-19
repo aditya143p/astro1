@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="./logo_astrolivechat-removebg-preview.ico">
+  <title>Astro Live Chat - Your Astrology Companion</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- Aos -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- font awesome link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+</head>
+<!-- testiminail -->
+<!-- <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous"> -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+<!-- testimonial -->
+
+    <!-- boot icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg sticky-top ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img class="logo" src="./logo_astrolivechat-removebg-preview.png"
+          alt="">Astro Live Chat</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style="background-color: #ffffff;">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel"> <a class="navbar-brand" href="#"><img class="logo" src="./logo_astrolivechat-removebg-preview.png"
+            alt="">AstroLiveChat</a></h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center  flex-grow-1 pe-3 align-items-center">
+            <li class="nav-item px-3" data-bs-dismiss="offcanvas" aria-label="Close">
+              <a class="nav-link active" href="#home" >HOME</a>
+            </li>
+            <li class="nav-item  px-3" data-bs-dismiss="offcanvas" aria-label="Close">
+              <a class="nav-link active" href="#about">ABOUT</a>
+            </li>
+            <li class="nav-item  px-3" data-bs-dismiss="offcanvas" aria-label="Close">
+              <a class="nav-link active" href="#timeline">FEATURES</a>
+            </li>
+            <li class="nav-item  px-3" data-bs-dismiss="offcanvas" aria-label="Close">
+              <a class="nav-link active" href="#testimonials">TESTIMONIALS</a>
+            </li>
+            <li class="nav-item  px-3" data-bs-dismiss="offcanvas" aria-label="Close">
+              <a class="nav-link active" href="#contactus">CONTACT US</a>
+            </li>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav justify-content-end flex-grow-.5 pe-3 align-items-center ">
+            <li class="nav-item px-1">
+              <a href="https://play.google.com/store/apps/details?id=com.astrolivechat.users&hl=en_GB" target="_blank"> <button class="nav-btn"><i class="bi bi-download"></i></button></a>
+            </li>
+            <li class="nav-item px-1">
+                <button class="nav-btn whatsapp-btn" onclick="window.open('https://wa.me/918872024001?text=Hello!%20I%20am%20interested%20in%20astrology%20services.%20Can%20you%20help%20me?', '_blank')">
+                    <i class="bi bi-whatsapp"></i>
+                </button>
+                
+              </li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- navbar end -->
+
+  <!-- hero start -->
+
+  <swiper-container style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="mySwiper"
+    speed="600" parallax="true" pagination="true" pagination-clickable="true" navigation="true" loop="true"
+    autoplay-delay="3000" autoplay-disable-on-interaction="false" id="home">
+    <div slot="container-start" class="parallax-bg" style=" background: linear-gradient(90deg, #FEC009, #FF5733);"
+      data-swiper-parallax="-23%"></div>
+
+    <swiper-slide>
+      <div class="row">
+        <div class="col-md-12 col-lg-6 col-sm-12 col-12 d-flex flex-column gap-3">
+          <div class="title" data-swiper-parallax="-300"> The best way to connect with Astrologer is with AstroLiveChat!
+          </div>
+          <div class="subtitle" data-swiper-parallax="-200">Astrology is a predictive science with its own sets of
+            methods,claims and finding that have forever inspired and allowed people with insights into different
+            aspects of their life.</div>
+          <div class="text" data-swiper-parallax="-100">
+            Unlock the Secrets of Your Destiny with Expert Astrology Insights
+          </div>
+          <div class="hero-btn">
+            <div class="play-btn">
+             <a href="https://play.google.com/store/apps/details?id=com.astrolivechat.users&hl=en_GB" target="_blank"> <button ><img src="./icons8-google-play-store-48.png"> Play Store</button></a>
+            </div>
+            <div class="play-btn" >
+              <a href="#features"><button ><img src="./puja (3).png" > About App</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6 col-sm-12 col-12 media-375">
+          <div class='wrapper'>
+            <div class='carousel'>
+              <div class='carousel__item'>
+                <div class='carousel__item-head'>
+                  <img src="./kalasha 1 (1).png" alt="">
+                </div>
+                <div class='carousel__item-body'>
+                  <p class='carousel__title'>Guidance Support</p>
+                  <p>Get best astrology counselors</p>
+                </div>
+              </div>
+              <div class='carousel__item'>
+                <div class='carousel__item-head'>
+                  <img src="./spirituality 1 (1).png" alt="">
+                </div>
+                <div class='carousel__item-body'>
+                  <p class='carousel__title'>Book a Pandit</p>
+                  <p>Book Pandit for Home Pooja</p>
+                </div>
+              </div>
+              <div class='carousel__item'>
+                <div class='carousel__item-head'>
+                  <img src="./elephant 2.png" alt="">
+                </div>
+                <div class='carousel__item-body'>
+                  <p class='carousel__title'>Astro Blogs</p>
+                  <p>Read Astrology Blogs</p>
+                </div>
+              </div>
+              <div class='carousel__item'>
+                <div class='carousel__item-head'>
+                  <img src="./horoscope_14283592.png" alt="">
+                </div>
+                <div class='carousel__item-body'>
+                  <p class='carousel__title'>Daily Horoscope</p>
+                  <p>Read Your Daily Horoscope </p>
+                </div>
+              </div>
+              <div class='carousel__item'>
+                <div class='carousel__item-head'>
+                  <img src="./science_14545038.png" alt="">
+                </div>
+                <div class='carousel__item-body'>
+                  <p class='carousel__title'>Daily Panchang</p>
+                  <p>Read Daily Panchang.</p>
+                </div>
+              </div>
+              <div class='carousel__item'>
+                <div class='carousel__item-head'>
+                  <img src="./image (5) 4.png" alt="">
+                </div>
+                <div class='carousel__item-body'>
+                  <p class='carousel__title'>AstroMall</p>
+                  <p>Shop from AstroMall </p>
+                </div>
+              </div>
+              <div class='carousel__item'>
+                <div class='carousel__item-head'>
+                  <img src="./image (8) 3.png" alt="">
+                </div>
+                <div class='carousel__item-body'>
+                  <p class='carousel__title'>Live Astrologers</p>
+                  <p>Watch Popular Astrologer Live</p>
+                </div>
+              </div>
+              <div class='carousel__item'>
+                <div class='carousel__item-head'>
+                  <img src="./friendship.png" alt="">
+                </div>
+                <div class='carousel__item-body'>
+                  <p class='carousel__title'>Kundli Matching</p>
+                  <p>Use our Kundli Matching Tool.</p>
+                </div>
+              </div>
+              <div class='carousel__item'>
+                <div class='carousel__item-head'>
+                  <img src="./flower.png" alt="">
+                </div>
+                <div class='carousel__item-body'>
+                  <p class='carousel__title'>Book a Pooja</p>
+                  <p>Get highly experianced pandit</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="row">
+        <div class="col-md-12 col-lg-6 col-sm-12 col-12 d-flex flex-column gap-3">
+          <div class="title" data-swiper-parallax="-300"> The easiest way to consult an astrologer is through AstroLiveChat!
+          </div>
+          <div class="subtitle" data-swiper-parallax="-200">Astrology is an ancient science with unique principles, beliefs, and techniques that have guided individuals by revealing key aspects of their lives.</div>
+          <div class="text" data-swiper-parallax="-100">
+            Discover the path to your true potential with powerful astrology guidance.
+          </div>
+          <div class="hero-btn">
+            <div class="play-btn">
+                <a href="https://play.google.com/store/apps/details?id=com.astrolivechat.users&hl=en_GB" target="_blank"> <button ><img src="./icons8-google-play-store-48.png"> Play Store</button></a>
+            </div>
+            <div class="play-btn">
+                <a href="#features"><button ><img src="./puja (3).png" > About App</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6 col-sm-12 col-12  justify-content-center" style="max-width: 400px;">
+          <img class="slider-img" src="./undraw_calling_ieh0 1.png" alt="">
+        </div>
+      </div>
+    </swiper-slide>
+    <swiper-slide>
+      <div class="row">
+        <div class="col-md-12 col-lg-6 col-sm-12 col-12 d-flex flex-column gap-3">
+          <div class="title" data-swiper-parallax="-300">AstroLiveChat is your ultimate guide to expert astrology consultations!
+          </div>
+          <div class="subtitle" data-swiper-parallax="-200">With ancient wisdom and proven techniques, astrology helps unlock insights into relationships, career, and life’s important decisions.</div>
+          <div class="text" data-swiper-parallax="-100">
+            Unveil your future with trusted astrology readings and guidance.
+          </div>
+          <div class="hero-btn">
+            <div class="play-btn">
+                <a href="https://play.google.com/store/apps/details?id=com.astrolivechat.users&hl=en_GB " target="_blank"> <button ><img src="./icons8-google-play-store-48.png"> Play Store</button></a>
+            </div>
+            <div class="play-btn">
+                <a href="#features"><button ><img src="./puja (3).png" > About App</button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-12 col-lg-6 col-sm-12 col-12  d-flex justify-content-center" style="max-width: 400px;">
+          <img class="slider-img" src="./undraw_modern-design_yur1 1 (2).png" alt="">
+        </div>
+      </div>
+    </swiper-slide>
+  </swiper-container>
+
+  <!-- hero-end -->
+
+  <!-- Second Slider start -->
+  <div class="Feature-slider">
+    <div class="Feature-slide-track">
+      <div class="inner-slide">
+        <img src="./aimg05 (1).png" height="70" width="70" alt="" />
+        <div>Monthly Matching</div>
+      </div>
+      <div class="inner-slide">
+        <img src="./aimg01 (1).png" height="70" width="70" alt="" />
+        <div>Horoscope Matching</div>
+      </div>
+      <div class="inner-slide">
+        <img src="./aimg02 (2).png" height="70" width="70" alt="" />
+        <div>Nakshatra Finder</div>
+      </div>
+      <div class="inner-slide">
+        <img src="./aimg04 (1).png" height="70" width="70" alt="" />
+        <div>Weekly Horoscope</div>
+      </div>
+      <div class="inner-slide">
+        <img src="./aimg06 (1).png" height="70" width="70" alt="" />
+        <div>Love Horoscope</div>
+      </div>
+      <div class="inner-slide">
+        <img src="./aimg05 (1).png" height="70" width="70" alt="" />
+        <div>Monthly Horoscope</div>
+      </div>
+      <div class="inner-slide">
+        <img src="./aimg07 (1).png" height="70" width="70" alt="" />
+        <div>Birth Chart</div>
+      </div>
+      <div class="inner-slide">
+        <img src="./aimg08 (1).png" height="70" width="70" alt="" />
+        <div>Kundli Matching</div>
+      </div>
+      <div class="inner-slide">
+        <img src="./aimg09 (1).png" height="70" width="70" alt="" />
+        <div>Nakshatra</div>
+      </div>
+      <div class="inner-slide">
+        <img src="./aimg11 (1).png" height="70" width="70" alt="" />
+        <div>Free Kundli</div>
+      </div>
+      <div class="inner-slide">
+        <img src="./aimg14 (1).png" height="70" width="70" alt="" />
+        <div>Mangal Dosh</div>
+      </div>
+      <div class="inner-slide">
+        <img src="./aimg18 (1).png" height="70" width="70" alt="" />
+        <div>Astromall</div>
+      </div>
+      <div class="inner-slide">
+        <img src="./aimg17 (1).png" height="70" width="70" alt="" />
+        <div>Marriage Prediction</div>
+      </div>
+      <div class="inner-slide">
+        <img src="./aimg18 (1).png" height="70" width="70" alt="" />
+        <div>Astromall</div>
+      </div>
+    </div>
+  </div>
+  <!-- Second Slider end -->
+
+
+
+  <!--service start-->
+  <div class="container-xxl py-5">
+    <div class="container ">
+      <div class="row g-4">
+
+        <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+          style="transition-duration: .9s;">
+          <div class="service-item text-center pt-3">
+            <div class="p-4">
+              <img src="./icons8-year-of-goat-96.png" alt="">
+              <h5 class="mb-3">Expert Astrologers</h5>
+              <p>Connect with highly skilled astrologers who use ancient Vedic wisdom and modern techniques to provide accurate readings and insights into your life's path.</p>
+            </div>
+            <div class="service-overlay"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+          style="transition-duration: .9s;">
+          <div class="service-item text-center pt-3">
+            <div class="p-4">
+              <img src="./icons8-hindu-swastik-96.png" alt="">
+              <h5 class="mb-3">Live Astrology Sessions</h5>
+              <p>Join real-time astrology consultations where you can ask personalized questions and gain clarity about love, career, finances, and life decisions.</p>
+            </div>
+            <div class="service-overlay"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+          style="transition-duration: .9s;">
+          <div class="service-item text-center pt-3">
+            <div class="p-4">
+              <img src="./customer-relationship_13339318.png" alt="">
+              <h5 class="mb-3">Love & Relationship Guidance</h5>
+              <p>Find answers to your love life questions. Get astrological insights on soulmate connections, and relationship challenges.</p>
+            </div>
+            <div class="service-overlay"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-sm-6" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+          style="transition-duration: .9s;">
+          <div class="service-item text-center pt-3">
+            <div class="p-4">
+              <img src="./horoscope_3776977.png" alt="">
+              <h5 class="mb-3">Astrology Library</h5>
+              <p>Explore an extensive collection of astrological books, birth charts, planetary movements, and Vedic scriptures to deepen your understanding of the cosmos.</p>
+            </div>
+            <div class="service-overlay"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--service end-->
+
+  <!-- About start -->
+
+  <div class="container-xxl py-5" id="about">
+    <div class="container" style="overflow-x: hidden;">
+      <div class="row g-5">
+        <div class="col-lg-6" style="min-height:400px" data-aos="fade-right" style="transition-duration: .9s;">
+          <div class="position-relative h-100">
+            <img src="./undraw_testimonials_4c7y 1.png" alt="about" class="position-absolute w-100 h-100"
+              style="object-fit:contain;">
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left" style="transition-duration: .9s;">
+          <h6 class="bg-white text-start text-dark pe-3 fw-bold fs-4 text-decoration-underline"> About US</h6>
+          <h1 class="mb-4">Welcome to <b style="color: #FEC009;">AstroLiveChat</b></h1>
+          <p class="mb-4">
+            At AstroLiveChat, we connect you with experienced astrologers who offer insights, guidance, and clarity on life’s biggest questions. Whether you're seeking advice on love, career, or personal growth, our platform provides instant access to professional astrological consultations.
+        </p>
+          </p>
+          <p class="mb-4">
+            Our mission is to make astrology accessible and convenient. Through live chats and personalized readings, we help individuals navigate their paths with confidence. Join us to uncover cosmic insights and embrace a journey of self-discovery with trusted astrologers at your fingertips.
+          </p>
+          <a class="btn btn-primary py-sm-3 px-sm-3 me-4" href="#offers" type="button">Our Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- about end -->
+
+  <!-- timeline start -->
+  <section id="timeline">
+    <h1 class="fw-semibold">Astro Live Chat Feature</h1>
+    <p class="leader">Astro Live Chat is the top-rated Astrological App that provides the most accurate and detailed
+      predictions about your future.</p>
+    <div class="demo-card-wrapper">
+      <div class="demo-card demo-card--step1" data-aos="zoom-in-right" style="transition-duration: .9s;">
+        <div class="head">
+          <div class="number-box">
+            <span>01</span>
+          </div>
+          <h2><span class="small">Personalized Pridiction For 12 Months</span> Personal Prophecy</h2>
+        </div>
+        <div class="body">
+          <p>Gain exclusive insights into your career, relationships, health, and finances with a detailed 12-month astrological forecast tailored to your birth chart.</p>
+          <img src="./time1.png" alt="Graphic">
+        </div>
+      </div>
+
+      <div class="demo-card demo-card--step2" data-aos="zoom-in-left" style="transition-duration: .9s;">
+        <div class="head">
+          <div class="number-box">
+            <span>02</span>
+          </div>
+          <h2><span class="small">Book a Pandit for your home pooja</span> Book a Pandit</h2>
+        </div>
+        <div class="body">
+          <p>Schedule Vedic rituals and ceremonies with experienced pandits for prosperity, health, and spiritual harmony in your home or workplace..</p>
+          <img src="./time2.png" alt="Graphic">
+        </div>
+      </div>
+
+      <div class="demo-card demo-card--step3" data-aos="zoom-in-right" style="transition-duration: .9s;">
+        <div class="head">
+          <div class="number-box">
+            <span>03</span>
+          </div>
+          <h2><span class="small">Read Your Daily Horoscope</span>Daily Horoscopes</h2>
+        </div>
+        <div class="body">
+          <p>Stay ahead of the day with accurate daily horoscopes based on planetary movements, offering guidance on love, career, and personal growth..</p>
+          <img src="./time3.png" alt="Graphic">
+        </div>
+      </div>
+
+      <div class="demo-card demo-card--step4" data-aos="zoom-in-left" style="transition-duration: .9s;">
+        <div class="head">
+          <div class="number-box">
+            <span>04</span>
+          </div>
+          <h2><span class="small">Shop From AstroMall</span> AstroMall</h2>
+        </div>
+        <div class="body">
+          <p>Explore a curated collection of astrology-based products, including gemstones, yantras, rudrakshas, and spiritual remedies to enhance your well-being.</p>
+          <img src="./time4.png" alt="Graphic">
+        </div>
+      </div>
+
+      <div class="demo-card demo-card--step5" data-aos="zoom-in-right" style="transition-duration: .9s;">
+        <div class="head">
+          <div class="number-box">
+            <span>05</span>
+          </div>
+          <h2><span class="small">Chat with Astrologers instantly</span> Guidence Support</h2>
+        </div>
+        <div class="body">
+          <p>Connect with expert astrologers in real-time to get instant answers, astrological remedies, and personalized guidance for any life situation.</p>
+          <img src="./time5.png" alt="Graphic">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- timeline end -->
+
+  <!-- sliding-screen start -->
+  <div class="splitview skewed">
+    <div class="panel bottom">
+      <div class="content">
+        <div class="description" data-aos="zoom-in-right" style="transition-duration: .9s;">
+          <p class="description-heading">Download App</p>
+          <p>You Can Download Our App From Google Play Store For Free.</p>
+        </div>
+
+        <img src="./undraw_personalization_0q05 2.png" alt="Original">
+      </div>
+    </div>
+
+
+    <div class="panel top">
+      <div class="content">
+        <div class="description" data-aos="zoom-in-left" style="transition-duration: .9s;">
+          <p class="description-heading">Enjoy App</p>
+          <p>Enjoy Daily Rashifal, Panchang, Kundli In Free Of Cost..</p>
+
+
+        </div>
+
+        <img src="./undraw_personalization_0q05 2.png" alt="Duotone">
+      </div>
+
+
+    </div>
+    <div class="handle"></div>
+  </div>
+  <!-- sliding-screen end -->
+
+
+
+  <!-- feature grid start -->
+  <section class="feature-container"  id="features">
+    <div class="text-center">
+        <h2 class="heading">Our Features</h2>
+        <p class="sub-heading">Discover the key areas where astrology provides deep insights, guidance, and clarity to shape your future..</p>
+    </div>
+    <div class="feature-row" style="overflow: hidden;">
+        <div class="feature-column" >
+            <div class="feature-box" data-aos="fade-right" style="transition-duration: .5s;">
+                <div class="icon">🔮</div>
+                <div>
+                    <h4 class="feature-title">Career Guidance</h4>
+                    <div class="feature-content">Feeling unsure about your next career move? We're here to help you find the right direction!</div>
+                    <div class="feature-text"> 📅 When will I land my dream job?</div>
+                    <div class="feature-text"> 📈 Is this the right time for a career switch?</div>
+                </div>
+            </div>
+            <div class="feature-box" data-aos="fade-right" style="transition-duration: .5s;">
+                <div class="icon">💍</div>
+                <div>
+                    <h4 class="feature-title">Marriage Obstacles</h4>
+                    <div class="feature-content">Worried about your marriage or future partner? Our experts can guide you through!</div>
+                    <div class="feature-text"> 💑 When will I get married?</div>
+                    <div class="feature-text"> ❤️ Will my marriage last, or is divorce possible?</div>
+                </div>
+            </div>
+            <div class="feature-box" data-aos="fade-right" style="transition-duration: .5s;">
+                <div class="icon">📚</div>
+                <div>
+                    <h4 class="feature-title">Education Guidance</h4>
+                    <div class="feature-content">Feeling unsure about which stream to choose. We can help you to find right path for your future.</div>
+                    <div class="feature-text"> 🌟 Which stream is the best fit for me?</div>
+                    <div class="feature-text">🎓 Will I achieve academic success?</div>
+                </div>
+            </div>
+        </div>
+        <div class="feature-column" style="display: flex; justify-content: center; transition-duration: .5s;" data-aos="fade-left" data-aos-anchor-placement="top-bottom">
+            <div class="image-container">
+                <img src="./undraw_social-bio_2xzi 1.png" alt="Feature Image">
+            </div>
+        </div>
+    </div>
+</section>
+  <!-- feaature grid end -->
+
+  <!-- offer start -->
+  <div class="container text-center mb-3" id="offers">
+    <h2 class="fw-bold mb-4">What We Offer!!</h2>
+    <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in" style="transition-duration: .5s;">
+            <div class="offer-card p-4">
+                <i class="fas fa-comments offer-icon"></i>
+                <h5>Live Chat with Expert Astrologers</h5>
+                <p>Get instant answers to your life’s biggest questions!</p>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" style="transition-duration: .5s;">
+            <div class="offer-card p-4">
+                <i class="fas fa-heart offer-icon"></i>
+                <h5>Free Kundli & Matchmaking</h5>
+                <p>Check your compatibility and future prospects.</p>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" style="transition-duration: .5s;">
+            <div class="offer-card p-4">
+                <i class="fas fa-star offer-icon"></i>
+                <h5>Personalized Horoscope</h5>
+                <p>Daily, weekly, monthly & yearly forecasts tailored for you.</p>
+            </div>
+        </div>
+        <div class="col-md-4"data-aos="zoom-in" style="transition-duration: .5s;">
+            <div class="offer-card p-4">
+                <i class="fas fa-sun offer-icon"></i>
+                <h5>Tarot & Psychic Readings</h5>
+                <p>Unlock the mysteries of love, career, and relationships.</p>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" style="transition-duration: .5s;">
+            <div class="offer-card p-4">
+                <i class="fas fa-shopping-cart offer-icon"></i>
+                <h5>AstroMall Remedies</h5>
+                <p>Buy powerful gemstones, yantras, and astrology-based solutions.</p>
+            </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" style="transition-duration: .5s;">
+            <div class="offer-card p-4">
+                <i class="fas fa-praying-hands offer-icon"></i>
+                <h5>Book a Pooja</h5>
+                <p>Arrange a Pandit for your home rituals & pooja services.</p>
+            </div>
+        </div>
+    </div>
+</div>
+   <!-- offer end -->
+
+
+  <!-- download section start -->
+  <section class="download-section" >
+    <img class="download-logo" src="logo_astrolivechat-removebg-preview.png" alt="AstroLiveChat Logo" data-aos="zoom-in" style="transition-duration: .3s;">
+    <h2 class="download-title" data-aos="zoom-in" style="transition-duration: .3s;">AstroLiveChat</h2>
+    <p class="download-text" data-aos="zoom-in" style="transition-duration: .3s;">Download the AstroLiveChat app and enjoy the best astrology services!</p>
+    
+    <a href="#" class="download-btn">
+        <img src="icons8-google-play-store-48.png" alt="Play Store" data-aos="zoom-in" style="transition-duration: .3s;"> Download Now
+    </a>
+</section>
+  <!-- download section end -->
+   <!-- statistic start -->
+   <section class="statistics-container">
+    <h1 class="statistics-heading">Astro Live Chat - Your Astrology Companion</h1>
+    <p class="statistics-sub-heading">Get insights into your life with astrology, tarot, numerology, and more!</p>
+    
+    <div class="statistics-row">
+        <div class="statistics-column">
+            <h3 class="stat-number" data-target="50000">0</h3>
+            <h5 class="stat-title">Happy Clients</h5>
+        </div>
+        <div class="statistics-column">
+            <h3 class="stat-number" data-target="12000">0</h3>
+            <h5 class="stat-title">Live Readings Done</h5>
+        </div>
+        <div class="statistics-column">
+            <h3 class="stat-number" data-target="800">0</h3>
+            <h5 class="stat-title">Expert Astrologers</h5>
+        </div>
+        <div class="statistics-column">
+            <h3 class="stat-number" data-target="20000">0</h3>
+            <h5 class="stat-title">Kundli Generated</h5>
+        </div>
+    </div>
+</section>
+   <!-- statistic end -->
+
+   <!-- testimonail section start -->
+   <section class="testimonial-section" id="testimonials">
+    <h2 class="testimonial-heading">Community Reviews</h2>
+    <p class="testimonial-subheading">See what our community has to say about their astrology experience!</p>
+    <div id="testimonial-slider" class="owl-carousel">
+    <div class="testimonial">
+    <div class="testimonial-container">
+        <div class="testimonial-card">
+            <div class="testimonial-top">
+                <img src="https://cdn.easyfrontend.com/pictures/users/user20.jpg" alt="User" class="testimonial-img">
+                <div class="testimonial-content">
+                    <h4 class="testimonial-title">Accurate Predictions</h4>
+                    <p class="rating">★★★★★</p>
+                </div>
+            </div>
+            <p class="testimonial-text">The astrologer's insights were spot on! Their predictions truly helped me make the right decisions.</p>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-top">
+                <img src="https://cdn.easyfrontend.com/pictures/users/user15.jpg" alt="User" class="testimonial-img">
+                <div class="testimonial-content">
+                    <h4 class="testimonial-title">Marriage Consultation</h4>
+                    <p class="rating">★★★★☆</p>
+                </div>
+            </div>
+            <p class="testimonial-text">Got clarity on my marriage prospects. Their guidance eased my doubts and brought peace of mind.</p>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-top">
+                <img src="https://cdn.easyfrontend.com/pictures/users/user22.jpg" alt="User" class="testimonial-img">
+                <div class="testimonial-content">
+                    <h4 class="testimonial-title">Career Guidance</h4>
+                    <p class="rating">★★★★★</p>
+                </div>
+            </div>
+            <p class="testimonial-text">The career astrology session gave me clear direction on my job prospects. Highly recommended!</p>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-top">
+                <img src="https://cdn.easyfrontend.com/pictures/users/user1.jpg" alt="User" class="testimonial-img">
+                <div class="testimonial-content">
+                    <h4 class="testimonial-title">Daily Horoscope</h4>
+                    <p class="rating">★★★★☆</p>
+                </div>
+            </div>
+            <p class="testimonial-text">Their daily horoscopes are incredibly accurate! I check them every morning.</p>
+        </div>
+    </div>
+    </div>
+
+    <div class="testimonial">
+    <div class="testimonial-container">
+        <div class="testimonial-card">
+            <div class="testimonial-top">
+                <img src="https://cdn.easyfrontend.com/pictures/users/user20.jpg" alt="User" class="testimonial-img">
+                <div class="testimonial-content">
+                    <h4 class="testimonial-title">Love Compatibility</h4>
+                    <p class="rating">★★★★★</p>
+                </div>
+            </div>
+            <p class="testimonial-text">Their compatibility analysis helped me understand my partner better. Very insightful!</p>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-top">
+                <img src="https://cdn.easyfrontend.com/pictures/users/user15.jpg" alt="User" class="testimonial-img">
+                <div class="testimonial-content">
+                    <h4 class="testimonial-title">Financial Astrology</h4>
+                    <p class="rating">★★★★☆</p>
+                </div>
+            </div>
+            <p class="testimonial-text">Astrological advice on finances was a game-changer! Now I invest with more confidence.</p>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-top">
+                <img src="https://cdn.easyfrontend.com/pictures/users/user22.jpg" alt="User" class="testimonial-img">
+                <div class="testimonial-content">
+                    <h4 class="testimonial-title">Health Predictions</h4>
+                    <p class="rating">★★★★★</p>
+                </div>
+            </div>
+            <p class="testimonial-text">Their health predictions encouraged me to adopt a better lifestyle. Feeling much better now!</p>
+        </div>
+        <div class="testimonial-card">
+            <div class="testimonial-top">
+                <img src="https://cdn.easyfrontend.com/pictures/users/user1.jpg" alt="User" class="testimonial-img">
+                <div class="testimonial-content">
+                    <h4 class="testimonial-title">Puja & Remedies</h4>
+                    <p class="rating">★★★★☆</p>
+                </div>
+            </div>
+            <p class="testimonial-text">The suggested remedies and puja helped bring positivity to my life. Truly grateful!</p>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+   <!-- testimonialsection end -->
+     <!-- Footer -->
+     <div class="container-fluid bg-dark text-white footer" id="contactus">
+      <div class="container">
+          <div class="row py-5 text-center text-md-start justify-content-around">
+
+              <div class="col-md-5  col-lg-3 col-sm-5 footer-sm-border">
+                  <h3>Contact Us</h3>
+                 <a href="https://maps.app.goo.gl/4CX2EeZgwRotC4ebA" target="_blank" style="text-decoration: none; " class="text-white"> <p class="d-flex align-items-center gap-2 contact-item"><i class="bi bi-geo-alt-fill fs-3"></i> Chandigarh, India
+                 </p></a>
+                 <a href="tel: +91-8872024001" style="text-decoration: none; " class="text-white"> <p class="d-flex align-items-center gap-2 contact-item" ><i class="bi bi-telephone-inbound-fill fs-3"></i>
+                    +91-8872024001</p></a>
+                  <a href="mailto:astrolivechat1@gmail.com?subject=Inquiry about AstroLiveChat&body=Hello, I have a question about AstoLiveChat Features..." style="text-decoration: none; " class="text-white">        <p class="d-flex align-items-center gap-2 contact-item"><i
+                    class="bi bi-envelope-at-fill fs-3"></i>astrolivechat1@gmail.com</p></a>
+              </div>
+
+              <div class="col-md-5 col-lg-3 col-sm-5 footer-border">
+                  <h3>Our Features</h3>
+                  <p>Astro Live Chat is a top-rated app delivering accurate, detailed future predictions.</p>
+                  <div class="social-icons">
+                      <a href="mailto:astrolivechat1@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+                      <a href="https://www.facebook.com/astrolivechat" target="_blank"><i class="bi bi-facebook"></i></a>
+                      <a href="https://play.google.com/store/apps/details?id=com.astrolivechat.users&hl=en_GB" target="_blank"><i class="bi bi-google"></i></a>
+                      <a href="https://www.instagram.com/astro.livechat" target="_blank"><i class="bi bi-instagram"></i></a>
+                  </div>
+              </div>
+
+              <div class="col-md-5 col-lg-3 col-sm-5 footer-border">
+                  <h3>What We Offer</h3>
+                  <div class="offer-list">
+                      <p><i class="bi bi-chevron-right"></i>Chat with Astrologers</p>
+                      <p><i class="bi bi-chevron-right"></i> Personalized Horoscope</p>
+                      <p><i class="bi bi-chevron-right"></i> AstroMall Remedies</p>
+                      <p><i class="bi bi-chevron-right"></i> Book a Pooja</p>
+                      <p><i class="bi bi-chevron-right"></i> Free Kundli </p>
+                  </div>
+              </div>
+
+              <div class="col-md-5 col-lg-3 col-sm-5 footer-border">
+                  <h3>AstroLiveChat</h3>
+                  <img src="./logo_astrolivechat-removebg-preview.png" class="img-fluid" alt="Instagram"
+                      style="height: 100px; width: 100px;">
+              </div>
+              <div class="col-12 footer-copyright">
+                  <div class="text-center mt-2 fw-bold">Copyright by AstroLiveChat</div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Footer End -->
+
+  <!-- Bootstrap 5 JS (Required for Offcanvas & Dropdown) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  <!-- swiper link -->
+  <!-- aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+
+  <!-- sliding screen js start -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var parent = document.querySelector('.splitview'),
+        topPanel = parent.querySelector('.top'),
+        handle = parent.querySelector('.handle'),
+        skewHack = 0,
+        delta = 0;
+
+      // Check if skew effect is applied
+      if (parent.classList.contains('skewed')) {
+        skewHack = 1000;
+      }
+
+      function moveHandle(clientX) {
+        // Calculate movement offset
+        delta = (clientX - window.innerWidth / 2) * 0.5;
+
+        // Move the handle
+        handle.style.left = clientX + delta + 'px';
+
+        // Adjust the width of the top panel
+        topPanel.style.width = clientX + skewHack + delta + 'px';
+      }
+
+      // Mouse move event
+      parent.addEventListener('mousemove', function (event) {
+        moveHandle(event.clientX);
+      });
+
+      // Touch move event (for mobile devices)
+      parent.addEventListener('touchmove', function (event) {
+        // Prevent default touch behavior (like scrolling)
+        event.preventDefault();
+        moveHandle(event.touches[0].clientX);
+      }, { passive: false });
+    });
+  </script>
+  <!-- sliding screen js end -->
+
+  <!-- statistic grid js/start -->
+   <script>
+   function animateNumbers(entries, observer) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const counters = document.querySelectorAll('.stat-number');
+                    counters.forEach(counter => {
+                        const target = +counter.getAttribute('data-target');
+                        let count = 0;
+                        const increment = target / 100;
+                        const updateCount = () => {
+                            count += increment;
+                            if (count < target) {
+                                counter.innerText = Math.ceil(count);
+                                requestAnimationFrame(updateCount);
+                            } else {
+                                counter.innerText = target;
+                            }
+                        };
+                        updateCount();
+                    });
+                    observer.unobserve(entry.target); // Stop observing once numbers start
+                }
+            });
+        }
+
+        const observer = new IntersectionObserver(animateNumbers, { threshold: 0.3 });
+        observer.observe(document.querySelector(".statistics-container"));
+   </script>
+     <!-- statistic grid js/end -->
+
+
+     <!-- testimonial js start -->
+     <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+     <script>
+         $(document).ready(function(){
+             $("#testimonial-slider").owlCarousel({
+                 items:1,
+                 itemsDesktop:[1000,1],
+                 itemsDesktopSmall:[979,1],
+                 itemsTablet:[768,1],
+                 pagination:true,
+                 navigation:false,
+                 navigationText:["",""],
+                 slideSpeed:1000,
+                 singleItem:true,
+                 autoPlay:true
+             });
+         });
+     </script>
+     <!-- testimonial  js end -->
+
+</body>
+
+</html>
